@@ -1,0 +1,23 @@
+{
+  "name": "natours-demo",
+  "version": "1.0.0",
+  "description": "A page to practice css fundamentals and animations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdfishe1/natours-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cdfishe1/natours-demo/issues"
+  },
+  "homepage": "https://github.com/cdfishe1/natours-demo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

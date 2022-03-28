@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,6 @@
   },
   "homepage": "https://github.com/cdfishe1/natours-demo#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+   
   }
 }

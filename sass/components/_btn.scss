@@ -1,0 +1,40 @@
+.btn {
+    position: relative;
+    padding: 0.9375rem 2.5rem;
+    border-radius: 10rem;
+    display: inline-block;
+    transition: .3s all;
+
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        transition: 0.4s all;
+    }
+
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &:hover {
+        transform: translateY(-0.1875rem);
+        box-shadow: 0 5px 10px rgba($color-dark,0.2);
+
+        &::after {
+            transform: scale(1.4, 1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-0.0625rem);
+    }
+}

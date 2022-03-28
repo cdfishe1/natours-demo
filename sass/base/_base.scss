@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    padding: 1.875rem;
+    box-sizing: border-box;
+}

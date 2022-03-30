@@ -1,0 +1,17 @@
+.about {
+    padding: 10rem;
+
+    &__content-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    &__text-wrapper {
+        flex: 0 0 40%
+    }
+
+    &__photo-collection {
+        flex: 0 0 40%;
+    }
+}

@@ -1,6 +1,6 @@
 .info-link {
     display: inline-block;
-    padding: .4rem 0;
+    padding: .4rem;
     border-bottom: 1px solid $color-med-green;
     font-size: 1.3rem;
     transition: all .3s;
@@ -13,7 +13,7 @@
     &:hover, &:focus {
         background-color: $color-med-green;
         color: $color-bright;
-        transform: translateY(-10px);
+        transform: translateY(-5px);
         box-shadow: $box-shadow;
     }
 }

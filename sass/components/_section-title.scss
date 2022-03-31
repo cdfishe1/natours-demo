@@ -2,13 +2,21 @@
     margin-bottom: 5rem;
     text-align: center;
     font-size: 3rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
     background-image: linear-gradient(to right, $color-light-green, $color-dark-green);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+    color: transparent;
+    transition: all .3s;
+
+    &:hover, &:focus {
+        transform: skew(15deg, 2deg);
+        box-shadow: .5rem 1rem 2rem rbga($color-dark, .3);
+    }
+    
 }   
+
+//something

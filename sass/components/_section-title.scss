@@ -3,4 +3,12 @@
     text-align: center;
     font-size: 3rem;
     text-transform: uppercase;
-}
+    background-image: linear-gradient(to right, $color-light-green, $color-dark-green);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}   

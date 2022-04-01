@@ -1,0 +1,64 @@
+.collection {
+    position: relative;
+    
+    //When the section is hovered, selected the pics that are not hovered and scale them down
+    &:hover &__pics:not(:hover) {
+        transform: scale(.95);
+    }
+
+    &__pics {
+        box-sizing: content-box;
+        width: 45%;
+        box-shadow: 0 0.9375rem 2.5rem rgba($color-dark, .4);
+        border-radius: 2px;
+        position: absolute;
+        transition: all .3s;
+        outline-offset: 15px;
+
+        &:hover, &:focus {
+            z-index: 20;
+            transform: scale(1.05) translateY(-5px);
+            box-shadow: 0 25px 40px rgba($color-dark, .5);
+            outline: 15px solid $color-light-green;
+        }
+
+        &--pic1 {
+            
+            top: -30px;
+            left: 0;
+            
+        }
+    
+        &--pic2 {
+            top: 40px;
+            left: 210px;
+        }
+    
+        &--pic3 {
+            position: relative;
+            top: 160px;
+            left: 60px;
+            
+        }
+    }
+
+    // &__pics--pic1 {
+    //     position: absolute;
+    //     transform: translate(0px, -50px);
+        
+    // }
+
+    // &__pics--pic2 {
+    //     position: absolute;
+    //     transform: translate(310px, 85px);
+    // }
+
+    // &__pics--pic3 {
+    //     z-index: 10;
+    //     position: relative;
+    //     transform: translate(110px, 185px)
+        
+    // }
+
+    
+}

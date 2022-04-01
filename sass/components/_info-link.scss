@@ -13,7 +13,11 @@
     &:hover, &:focus {
         background-color: $color-med-green;
         color: $color-bright;
-        transform: translateY(-5px);
+        transform: translateY(-3px);
         box-shadow: $box-shadow;
+    }
+
+    &:active {
+        transform: translateY(3px);
     }
 }

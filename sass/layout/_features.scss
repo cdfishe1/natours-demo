@@ -1,0 +1,17 @@
+.features {
+    background-image: linear-gradient(to right bottom, rgba($color-light-green, 0.8), rgba($color-dark-green, 0.8)),
+        url(/img/nat-4.jpg);
+    background-size: cover;
+    padding: 20rem 10rem;
+
+    &__card-list {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        list-style: none;
+    }
+
+    &__card-option {
+        
+    }
+}

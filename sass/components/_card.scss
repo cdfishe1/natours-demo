@@ -1,0 +1,47 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20rem;
+    padding: 1rem;
+    background-color: $color-bright;
+    transition: all .3s;
+
+    &__icon-box {
+        height: 4.5rem;
+        width: 4.5rem;
+        mask-size: 4.5rem 4.5rem;
+        background-image: linear-gradient(to right, $color-light-green, $color-dark-green);
+        margin-bottom: 1rem;
+
+        &--sphere {
+            mask-image: url(/img/SVG/sphere.svg);
+        }
+
+        &--compass {
+            mask-image: url(/img/SVG/compass.svg);
+        }
+
+        &--map {
+            mask-image: url(/img/SVG/map2.svg);
+        }
+
+        &--heart {
+            mask-image: url(/img/SVG/heart.svg);
+        }
+    }
+
+    .section-subtitle {
+        margin-bottom: 1rem;
+    }
+
+    .paragraph {
+        text-align: center;
+    }
+
+    &:hover, &:focus {
+        transform: translateY(-10px) scale(1.05);
+    }
+
+}

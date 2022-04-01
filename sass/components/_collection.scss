@@ -1,7 +1,7 @@
 .collection {
     position: relative;
     
-    //When the section is hovered, selected the pics that are not hovered and scale them down
+    //When the section is hovered, select the pics that are not hovered and scale them down
     &:hover &__pics:not(:hover) {
         transform: scale(.95);
     }

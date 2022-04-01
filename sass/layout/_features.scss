@@ -2,7 +2,11 @@
     background-image: linear-gradient(to right bottom, rgba($color-light-green, 0.8), rgba($color-dark-green, 0.8)),
         url(/img/nat-4.jpg);
     background-size: cover;
-    padding: 20rem 10rem;
+    padding: 12.5rem 0;
+    transform: skewY(-7deg);
+    & > * {
+        transform: skewY(7deg);
+    }
 
     &__card-list {
         display: flex;
@@ -12,7 +16,4 @@
         list-style: none;
     }
 
-    &__card-option {
-        
-    }
 }

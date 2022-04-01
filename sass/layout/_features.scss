@@ -6,8 +6,9 @@
 
     &__card-list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 1.5rem;
+        gap: 5rem;
         list-style: none;
     }
 

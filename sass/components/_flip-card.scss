@@ -1,18 +1,19 @@
 .flip {
     perspective: 1500px;
-    height: 30rem;
+    height: 33rem;
     position: relative;
    
     &__side {
         position: absolute;
         top: 0;
         left: 0;
-        height: 30rem;
+        height: 33rem;
         width: 100%;
         transition: all .8s ease;
         backface-visibility: hidden;
         border-radius: 3px;
         box-shadow: 0 15px 40px rgba(0,0,0, .15);
+        overflow: hidden;
 
         &--front {
             
@@ -51,22 +52,35 @@
     &__picture {
         background-size: cover;
         height: 230px;
+        background-blend-mode: color;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        backface-visibility: hidden;
 
         &--sea {
-            background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark), url(../img/nat-5.jpg);
         }
 
         &--forest {
-            background-image: url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom, $color-light-green, $color-dark-green), url(../img/nat-6.jpg);
         }
 
         &--snow {
-            background-image: url(../img/nat-7.jpg);
+            background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark), url(../img/nat-7.jpg);
         }
     }
 
     &__details {
         list-style: none;
+        padding: 0 4rem;
+        font-size: 1.1rem;
+    }
+
+    &__details-options {
+        text-align: center;
+        padding: .5rem;
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba($color-text, .2);
+        }
     }
        
 }

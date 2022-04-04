@@ -15,9 +15,9 @@
         box-shadow: 0 15px 40px rgba(0,0,0, .15);
         overflow: hidden;
 
-        &--front {
+        // &--front {
             
-        }
+        // }
 
         &--back {
             transform: rotateY(180deg);
@@ -69,9 +69,46 @@
         }
     }
 
+    &__heading {
+        font-size: 1.75rem;
+        text-align: right;
+        position: absolute;
+        top: 5rem;
+        right: 2rem;
+        color: $color-bright;
+        max-width: 75%;
+
+        .section-subtitle {
+            font-weight: $font-light;
+        }
+
+    }
+
+    &__heading-span {
+        &--sea {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-orange-light, .85), 
+            rgba($color-orange-dark, .85));
+        }
+
+        &--forest {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-light-green, .85), 
+            rgba($color-dark-green, .85));
+
+        }
+
+        &--snow {
+            background-image: linear-gradient(to right bottom,
+            rgba($color-blue-light, .85), 
+            rgba($color-blue-dark, .85));
+
+        }
+    }
+
     &__details {
         list-style: none;
-        padding: 0 4rem;
+        padding: 1rem 4rem;
         font-size: 1.1rem;
     }
 

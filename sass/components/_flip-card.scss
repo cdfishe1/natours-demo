@@ -7,17 +7,15 @@
         position: absolute;
         top: 0;
         left: 0;
-        color: white;
         height: 30rem;
         width: 100%;
         transition: all .8s ease;
-        padding: 10rem;
         backface-visibility: hidden;
         border-radius: 3px;
         box-shadow: 0 15px 40px rgba(0,0,0, .15);
 
         &--front {
-            background-color: orangered;
+            
         }
 
         &--back {
@@ -48,6 +46,17 @@
     &:hover &__side--back, &:focus &__side--back {
         transform: rotateY(0deg);
         
+    }
+
+    &__picture {
+        background-size: cover;
+        &--sea {
+            background-image: url(/img/nat-5.jpg);
+        }
+    }
+
+    &__details {
+        list-style: none;
     }
        
 }

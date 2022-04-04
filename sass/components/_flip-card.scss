@@ -1,0 +1,53 @@
+.flip {
+    perspective: 1500px;
+    height: 30rem;
+    position: relative;
+   
+    &__side {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: white;
+        height: 30rem;
+        width: 100%;
+        transition: all .8s ease;
+        padding: 10rem;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 15px 40px rgba(0,0,0, .15);
+
+        &--front {
+            background-color: orangered;
+        }
+
+        &--back {
+            transform: rotateY(180deg);
+
+            &-sea {
+                background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
+            }
+
+            &-forest {
+                background-image: linear-gradient(to right bottom, $color-light-green, $color-dark-green);
+            }
+
+            &-snow {
+                background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+            }
+             
+        }
+
+    }
+
+
+    &:hover &__side--front, &:focus &__side--front {
+        transform: rotateY(180deg);
+         
+    }
+
+    &:hover &__side--back, &:focus &__side--back {
+        transform: rotateY(0deg);
+        
+    }
+       
+}

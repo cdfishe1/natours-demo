@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,AAAC,CACH,OAAO,CAAE,OAAO,CACnB",
+    "sources": [
+        "../sass/layout/tours.scss"
+    ],
+    "names": [],
+    "file": "tours.min.css"
+}

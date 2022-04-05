@@ -22,6 +22,7 @@
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         clip-path: circle(50% at 50% 50%);
+        overflow: hidden;
     }
 
     &__picture {
@@ -66,8 +67,4 @@
        text-align: center;
     }
 
-    // &__link {
-    //     display: inline-block;
-    //     margin: 0 auto;
-    // }
 }

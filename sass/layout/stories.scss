@@ -1,4 +1,10 @@
 .stories {
     background-color: lightgoldenrodyellow;
     padding: 10rem 0;
+
+    
+    &__story-box {
+        display: flex;
+        justify-content: center;
+    }
 }

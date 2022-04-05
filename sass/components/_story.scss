@@ -1,0 +1,22 @@
+.story {
+    display: flex;
+    flex: 0 0 60%;
+    background-color: rgba($color-bright, .5);
+   
+
+    padding: 4rem;
+
+    &__shape {
+        margin-right: 2rem;
+        height: 200px;
+    }
+
+    &__picture {
+        height: 100%;
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+    }
+}

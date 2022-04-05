@@ -5,12 +5,14 @@
     box-shadow: 0 30px 60px rgba($color-dark, .1);
     padding: 4rem 7rem;
     transform: skewX(-12deg);
+    
 
     & > * {
         transform: skewX(12deg);
     }
 
     &__shape {
+        position: relative;
         float: left;
         margin-right: 2rem;
         height: 200px;
@@ -29,5 +31,26 @@
         
     }
 
-   
+    &__caption {
+        color: $color-bright;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.1rem;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        opacity: 0;
+        transition: all .5s;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__picture {
+        filter: blur(8px);
+    }
 }

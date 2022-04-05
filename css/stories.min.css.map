@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACL,gBAAgB,CAAE,oBAAoB,CACtC,OAAO,CAAE,OAAO,CACnB",
+    "sources": [
+        "../sass/layout/stories.scss"
+    ],
+    "names": [],
+    "file": "stories.min.css"
+}

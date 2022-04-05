@@ -1,7 +1,10 @@
 .stories {
-    background-color: lightgoldenrodyellow;
+    position: relative;
     padding: 10rem 0;
-
+ 
+    &__header {
+        margin-bottom: 4.5rem;
+    }
     
     
 }

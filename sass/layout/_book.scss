@@ -1,0 +1,14 @@
+.book {
+    background-image: linear-gradient(to right bottom, $color-light-green, $color-dark-green);
+    padding: 10rem 0;
+}
+
+.book-box {
+    margin: 0 auto;
+    background-image: url(../img/nat-10.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    height: 50rem;
+    width: 80%;
+}

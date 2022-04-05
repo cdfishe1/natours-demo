@@ -4,7 +4,9 @@
     background-color: rgba($color-bright, .5);
     box-shadow: 0 30px 60px rgba($color-dark, .1);
     padding: 4rem 7rem;
+    margin-bottom: 4rem;
     transform: skewX(-12deg);
+    
     
 
     & > * {
@@ -24,6 +26,9 @@
 
     &__picture {
         height: 100%;
+        transform: scale(1.2);
+        transition: all .5s;
+        backface-visibility: hidden;
     }
 
     &__text {
@@ -43,6 +48,7 @@
         transform: translate(-50%, 20%);
         opacity: 0;
         transition: all .5s;
+        backface-visibility: hidden;
     }
 
     &:hover &__caption {
@@ -51,6 +57,17 @@
     }
 
     &:hover &__picture {
-        filter: blur(8px);
+        filter: blur(3px) brightness(80%);
+        transform: scale(1);
+        
     }
+
+    &__link-box {
+       text-align: center;
+    }
+
+    // &__link {
+    //     display: inline-block;
+    //     margin: 0 auto;
+    // }
 }

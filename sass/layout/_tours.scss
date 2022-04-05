@@ -1,5 +1,5 @@
 .tours {
-    padding: 250px 0;
+    padding: 15.625rem 0 10rem;
 
     &__card-list {
         display: flex;
@@ -15,5 +15,21 @@
 
     .section-subtitle { 
         margin-bottom: 0;
+    }
+
+    &__discover-box {
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+    }
+
+    &__discover-link {
+        background-color: $color-med-green;
+        color: $color-bright;
+        animation: moveInBottom 1s ease-out backwards 0.5s;
+    }
+
+    &__discover-link::after {
+        background-color: $color-med-green;
     }
 }

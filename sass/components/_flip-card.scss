@@ -1,5 +1,5 @@
 .flip {
-    perspective: 1500px;
+    perspective: 93.75rem;
     height: 33rem;
     position: relative;
    
@@ -12,12 +12,8 @@
         transition: all .8s ease;
         backface-visibility: hidden;
         border-radius: 3px;
-        box-shadow: 0 15px 40px rgba(0,0,0, .15);
+        box-shadow: 0 0.9375rem 2.5rem rgba(0,0,0, .15);
         overflow: hidden;
-
-        // &--front {
-            
-        // }
 
         &--back {
             display: flex;
@@ -55,7 +51,7 @@
 
     &__picture {
         background-size: cover;
-        height: 230px;
+        height: 14.375rem;
         background-blend-mode: color;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         backface-visibility: hidden;
@@ -132,6 +128,10 @@
         font-weight: $font-light;
     }
 
+    &__price-box {
+        margin-bottom: 5rem;
+    }
+
     &__only {
         font-size: 1.5rem;
     }
@@ -144,11 +144,14 @@
     &__link {
         background-color: $color-bright;
         color: $color-text;
+        font-weight: $font-bold;
         animation: moveInBottom 1s ease-out backwards 0.5s;
     }
 
     &__link::after {
         background-color: $color-bright;
     }
+
+    
        
 }

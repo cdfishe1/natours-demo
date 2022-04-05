@@ -146,5 +146,9 @@
         color: $color-text;
         animation: moveInBottom 1s ease-out backwards 0.5s;
     }
+
+    &__link::after {
+        background-color: $color-bright;
+    }
        
 }

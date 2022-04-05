@@ -5,10 +5,24 @@
 
 .book-box {
     margin: 0 auto;
-    background-image: url(../img/nat-10.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-
+    background-image: linear-gradient(105deg,
+         rgba($color-bright, .9) 0%,
+         rgba($color-bright, .9) 50%,
+         transparent 50%), 
+         url(../img/nat-10.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    
     height: 50rem;
     width: 80%;
+
+    &__header {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    &__form {
+        width: 50%;
+        padding: 60px;
+    }
 }

@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACL,gBAAgB,CAAE,oBAAoB,CACtC,OAAO,CAAE,OAAO,CAOnB,AAJI,AAAD,mBAAY,AAAC,CACT,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,MAAM,CAC1B",
+    "mappings": "AAAA,AAAA,QAAQ,AAAC,CACL,gBAAgB,CAAE,oBAAoB,CACtC,OAAO,CAAE,OAAO,CAInB",
     "sources": [
         "../sass/layout/stories.scss"
     ],

@@ -88,4 +88,13 @@
     &__radio-input:checked ~ &__radio-label &__radio-button::after{
         opacity: 1;
     }
+
+   &__link {
+    background-color: #55c57a;
+    color: #fff;
+    -webkit-animation: moveInBottom 1s ease-out backwards 0.5s;
+    animation: moveInBottom 1s ease-out backwards 0.5s;
+    border: none;
+    cursor: pointer;
+   }
 }

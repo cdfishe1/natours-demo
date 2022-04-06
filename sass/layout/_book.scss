@@ -1,6 +1,7 @@
 .book {
     background-image: linear-gradient(to right bottom, $color-light-green, $color-dark-green);
     padding: 10rem 0;
+
 }
 
 .book-box {
@@ -13,7 +14,6 @@
     background-size: cover;
     border-radius: 3px;
     
-    height: 50rem;
     width: 80%;
 
     &__header {
@@ -25,4 +25,14 @@
         width: 50%;
         padding: 60px;
     }
+
+    &__link {
+        margin-top: 1rem;
+        background-color: #55c57a;
+    color: #fff;
+    -webkit-animation: moveInBottom 1s ease-out backwards 0.5s;
+    animation: moveInBottom 1s ease-out backwards 0.5s;
+    }
+
+    
 }

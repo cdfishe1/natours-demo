@@ -15,6 +15,7 @@
         background-color: $color-bright;
         width: 75%;
         box-shadow: 0 2rem 4rem rgba($color-dark, .2);
+        border-radius: 3px;
     }
 
     &__images {
@@ -37,16 +38,30 @@
     }
 
     &__closer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         top: 0;
         right: 0;
         font-size: 1.5rem;
         font-weight: $font-bold;
-        padding: 1rem;
+        padding: .5rem;
+        margin: 1rem;
+        line-height: 1;
+        border: 2px solid currentColor;
+        border-radius: 50%;
+        height: 2rem;
+        width: 2rem;
+        transition: all .3s;
 
         &:link, &:visited {
             color: $color-text;
             text-decoration: none;
+        }
+
+        &:hover, &:focus {
+            color: $color-med-green;
         }
     }
 
@@ -64,6 +79,7 @@
 
     &__paragraph-box {
         display: flex;
+        gap: 1rem;
     }
 
     &__paragraph {
@@ -73,14 +89,14 @@
         }
 
         &:not(:first-child) {
-            padding-left: 1.5rem;
+             padding-left: 1.5rem;
         }
 
     }
 
     &__link {
         align-self: flex-start;
-        margin-top: 1rem;
+        margin-top: 2rem;
         background-color: #55c57a;
         color: #fff;
     }

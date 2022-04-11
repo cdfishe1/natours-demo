@@ -6,11 +6,20 @@
     padding: 4rem 7rem;
     margin-bottom: 4rem;
     transform: skewX(-12deg);
+
+    @include respond(tab-land) {
+        padding: 4rem 2rem;
+        transform: skewX(0deg);
+    }
     
     
 
     & > * {
         transform: skewX(12deg);
+
+        @include respond(tab-land) {
+            transform: skewX(0deg);
+        }
     }
 
     &__shape {

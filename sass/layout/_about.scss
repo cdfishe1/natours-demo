@@ -1,17 +1,52 @@
 .about {
     padding: 10rem;
 
+    @include respond(tab-port) {
+        padding: 5rem;
+    }
+
+    @include respond(phone) {
+        padding: 5rem 0 15rem;
+    }
+ 
     &__content-wrapper {
         display: flex;
         justify-content: center;
         gap: 5rem;
+
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
     }
 
     &__text-wrapper {
-        flex: 0 0 40%
+        flex: 0 0 40%;
+
+        @include respond(tab-land) {
+            flex: 0 0 50%;
+        }
+
+        @include respond(tab-port) {
+            flex: 1;
+        }
     }
+    
 
     &__photo-collection {
         flex: 0 0 40%;
+
+        @include respond(tab-land) {
+            flex: 0 0 50%;
+        }
+
+        @include respond(tab-port) {
+            flex: 1;
+        }
+    }
+
+    &__header {
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
     }
 }

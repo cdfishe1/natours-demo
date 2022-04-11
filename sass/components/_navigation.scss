@@ -10,12 +10,17 @@
         width: 4.375rem;
         border-radius: 50%;
         position: fixed;
-        top: 60px;
-        right: 60px;
+        top: 3.75rem;
+        right: 3.75rem;
         z-index: 2000;
         cursor: pointer;
         box-shadow: 0 1rem 3rem rgba($color-dark, .2) ;
         text-align: center;
+
+        @include respond(phone) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
 
     }
 
@@ -66,6 +71,11 @@
         background-image: radial-gradient($color-light-green, $color-dark-green);
         z-index: 1000;
         transition: all .8s;
+
+        @include respond(phone) {
+            top: 2.5rem;
+            right: 2.5rem;
+        }
     }
 
     &__nav {

@@ -7,11 +7,13 @@
     width: 100vw;
     top: 0;
     left: 0;
-    background-color: rgba($color-dark, .8);
+    background-color: rgba($color-bright, .7);
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
+
+    backdrop-filter: blur(10px);
 
     &:target {
         opacity: 1;

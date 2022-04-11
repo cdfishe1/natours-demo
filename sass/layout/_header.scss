@@ -8,6 +8,11 @@
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     backface-visibility: hidden;
 
+    @media (min-resolution: 192dpi) and (min-width: 37.5rem){
+        background-image: linear-gradient(to right bottom, rgba($color-light-green, 0.8), rgba($color-dark-green, 0.8)),
+        url(../img/hero.jpg);
+    }
+
     &__logo-box {
         transform: translate(2.5rem, 2.5rem);
         display: inline-block
